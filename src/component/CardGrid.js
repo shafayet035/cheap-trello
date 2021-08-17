@@ -7,7 +7,6 @@ const CardGrid = ({ id, index, tempData, el }) => {
   const [element, setElement] = useState(null);
 
   const actionHandler = (docId, data, direction, i) => {
-    const arr = [...tempData];
     if (direction === "right") {
       const fromid = tempData[index].id;
       const toId = tempData[index + 1].id;

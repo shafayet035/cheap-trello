@@ -16,7 +16,7 @@ const Board = () => {
     db.collection("columns").onSnapshot((snapshot) => {
       const arr = [];
       snapshot.docs.map((doc) => {
-        arr.push({
+        return arr.push({
           id: doc.id,
           colName: doc.data().colName,
         });
